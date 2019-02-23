@@ -10,10 +10,10 @@ import pusher
 app = Flask(__name__)
 
 # initialize Pusher
-pusher_client = pusher.Pusher(app_id="720759",
-                              key="8ac54d4c556f3c3d8066",
-                              secret="130dc91dcc92cef5184d",
-                              cluster="ap2",
+pusher_client = pusher.Pusher(app_id=<app_id>,
+                              key=<key>,
+                              secret=<secret>,
+                              cluster=<cluster>,
                               ssl=True)
 
 
@@ -36,7 +36,7 @@ def get_response(user_intent, user_text):
         response = data.loc[data['sim_score'].idxmax()]['response']
         return response
 
-    db = pd.read_csv('C:\\Users\\Nildip.mukherjee\\AnacondaProjects\\flask_chatbot\\data\\entity.csv', encoding = "ISO-8859-1")
+    db = pd.read_csv('..data\\entity.csv', encoding = "ISO-8859-1")
     user_text = user_text.lower()
     db_tmp = db[db['intent'] == user_intent]
 
@@ -77,7 +77,7 @@ def detect_intent_texts(project_id, session_id, text, language_code):
 @app.route('/send_message', methods=['POST'])
 def send_message():
     message = request.form['message']
-    project_id = 'faq-bot-54d03'
+    project_id = <project_id>
     fulfillment_text = detect_intent_texts(project_id, "unique", message, 'en')
     response_text = {"message": fulfillment_text}
 
