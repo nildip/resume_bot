@@ -34,7 +34,7 @@ decorator==4.3.0
 deprecation==2.0.6
 dialogflow==0.4.0
 dill==0.2.8.2
-Django==2.0.2
+Django==2.2.10
 django-decorator-include==2.1
 django-force-logout==3.2.1
 django-impersonate==1.3
