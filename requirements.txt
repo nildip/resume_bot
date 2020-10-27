@@ -21,7 +21,7 @@ Click==7.0
 cloudpickle==0.6.1
 colorama==0.3.9
 croniter==0.3.26
-cryptography==2.3.1
+cryptography==3.2
 cryptography-vectors==2.3.1
 CVXcanon==0.1.1
 cvxpy==1.0.8
