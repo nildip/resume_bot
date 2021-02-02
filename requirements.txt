@@ -9,7 +9,7 @@ beautifulsoup4==4.6.1
 bert-serving-client==1.8.2
 bert-serving-server==1.8.2
 bert-tensorflow==1.0.1
-bleach==1.5.0
+bleach==3.3.0
 Boruta==0.1.5
 boto3==1.7.33
 botocore==1.10.33
