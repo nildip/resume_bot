@@ -127,7 +127,7 @@ parso==0.2.0
 pdfkit==0.6.1
 pgdb==0.0.5
 pickleshare==0.7.4
-Pillow==5.2.0
+Pillow==8.1.1
 plac==0.9.6
 pluggy==0.8.0
 pocketsphinx==0.1.15
